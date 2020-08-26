@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	background: #f7f7f7;
+}
+
+.header-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 22px 0;
+}
+
+.header-title h3 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #3c3a39;
+}
+
+.container {
+	width: 95%;
+	max-width: 1230px;
+	margin: auto;
+}
+
+.main-nav {
+	background: #fff;
+	border-bottom: 1px solid #dce2e2;
+}
+
+.main-nav .header {
+	height: 55px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding-bottom: 8px;
+}
+
+.main-nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	list-style: none;
+}
+
+.main-nav ul li {
+	font-size: 16px;
+	color: #9ca1a1;
+	font-weight: 400;
+	margin-right: 25px;
+}
+
+.main-nav ul li:hover a {
+	color: #67ab6e;
+}
+
+.main-nav ul li a {
+	color: #9ca1a1;
+	text-decoration: none;
+	transition: all 0.4s ease-in;
+}
+
+.search img {
+	width: 14px;
+}
+
+.search input {
+	background: transparent;
+	border: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	color: #9ca1a1;
+	outline: none;
+	padding-left: 20px;
+}
+
+.search input::placeholder {
+	color: #9ca1a1;
+}
+
+.jumbutron {
+	margin: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 350px;
+	background: url(./images/bg.jpeg) no-repeat center center/cover;
+	position: relative;
+	z-index: 1;
+	padding: 30px;
+}
+
+.jumbutron:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #bc3570;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+.jumbutron .explorer {
+	display: flex;
+	flex-direction: column;
+	width: 279px;
+}
+
+.jumbutron .explorer h2 {
+	font-size: 33px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.jumbutron .explorer p {
+	font-size: 15px;
+	font-weight: normal;
+	color: #fff;
+	padding: 5px 0;
+}
+
+.jumbutron .explorer a {
+	padding: 9px;
+	color: #67ab6e;
+	background: #fff;
+	text-align: center;
+	width: 145px;
+	text-decoration: none;
+	margin-top: 15px;
+	font-size: 15px;
+	transition: all 0.4s ease-in;
+}
+
+.jumbutron .explorer a:hover {
+	background: #67ab6e;
+	color: #fff;
+}
+
+.card-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+}
+
+.card-grid .card {
+	width: 100%;
+	max-width: 200px;
+	overflow: hidden;
+	border: 1px solid #fff;
+}
+
+.card-grid .card .card-header {
+	width: 100%;
+	height: 170px;
+}
+
+.card-grid .card .card-header img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-grid .card .card-body {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	height: 110px;
+	background: #fff;
+}
+
+.card-grid .card-body .card-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-grid .card-body .card-info li {
+	color: #67ab6e;
+	font-size: 12px;
+}
+
+.card-grid .card-body .card-info small {
+	font-size: 14px;
+	font-weight: bold;
+	color: #3c3a39;
+}
+
+.card-grid .card-body h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #3c3a39;
+	padding-top: 11px;
+}
+
+.recommended-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.recommended-grid .recom-card {
+	height: 192px;
+	display: grid;
+	grid-template-columns: 0.7fr 1fr;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.recom-card .recom-header {
+	max-width: 188px;
+	height: 100%;
+}
+
+.recom-card .recom-header img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.recom-details {
+	padding: 18px;
+	display: flex;
+	flex-direction: column;
+}
+
+.recom-details .recom-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.recom-details .recom-info li {
+	color: #67ab6e;
+	font-size: 12px;
+}
+
+.recom-details .recom-info small {
+	font-size: 14px;
+	font-weight: bold;
+	color: #3c3a39;
+}
+
+.recom-details h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #3c3a39;
+	padding-top: 11px;
+}
+
+.recom-details p {
+	font-size: 12px;
+	color: #3c3a39;
+	padding-top: 6px;
+}
+
+.recommended-grid-2 {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	padding-bottom: 50px;
+}
+
+.recommended-grid-2.recommended-grid-2 .card {
+	width: 100%;
+	max-width: 200px;
+	overflow: hidden;
+	border: 1px solid #fff;
+}
+
+.recommended-grid-2 .card .card-header {
+	width: 100%;
+	height: 170px;
+}
+
+.recommended-grid-2 .card .card-header img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.recommended-grid-2 .card .card-body {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	height: 110px;
+	background: #fff;
+}
+
+.recommended-grid-2 .card-body .card-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.recommended-grid-2 .card-body .card-info li {
+	color: #67ab6e;
+	font-size: 12px;
+}
+
+.recommended-grid-2 .card-body .card-info small {
+	font-size: 14px;
+	font-weight: bold;
+	color: #3c3a39;
+}
+
+.recommended-grid-2 .card-body h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #3c3a39;
+	padding-top: 11px;
+}
+
+@media screen and (max-width: 1024px) {
+	.jumbutron {
+		height: inherit;
+		flex-direction: column;
+		align-items: initial;
+	}
+	.card-grid {
+		margin-top: 30px;
+	}
+	.recommended-grid-2 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.recommended-grid-2.recommended-grid-2 .card {
+		max-width: 100%;
+	}
+	.recommended-grid {
+		grid-template-columns: 1fr;
+	}
+	.recommended-grid .recom-card {
+		width: 460px;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.card-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.card-grid .card {
+		width: 100%;
+		max-width: 100%;
+	}
+	.main-nav .header {
+		height: inherit;
+		align-items: center;
+		justify-content: initial;
+		padding-bottom: 8px;
+		padding-top: 19px;
+		flex-direction: column;
+	}
+	.search {
+		margin-top: 25px;
+	}
+	.recommended-grid-2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.header-title h3 {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.card-grid {
+		grid-template-columns: 1fr;
+	}
+	.recommended-grid-2 {
+		grid-template-columns: 1fr;
+	}
+	.recommended-grid .recom-card {
+		width: 100%;
+	}
+	.main-nav ul li {
+		margin-right: 5px;
+	}
+}
